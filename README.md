@@ -1,6 +1,6 @@
-# Employee Management System#
+# Employee Management System
 
-# HOW TO RUN THIS PROJECT?# ###FROM THE IDE:###
+# HOW TO RUN THIS PROJECT?
 
 Open the project in an IDE like Eclipse/IntelliJ.
 
@@ -26,9 +26,9 @@ spring.datasource.url = jdbc:h2:mem:testdb
 * Hit url : "http://localhost:8080/emp/get" and url : "http://localhost:8080/dept/get"
 
 * Accordingly select the request method and the url as follows:
- * Department: GET - "http://localhost:8080/dept/get" - gets list of all departments GET - "http://localhost:8080/dept/{id}" - gets department with selected id POST - "http://localhost:8080/dept/create" - inserts into department 
+   - Department: GET - "http://localhost:8080/dept/get" - gets list of all departments GET - "http://localhost:8080/dept/{id}" - gets department with selected id POST - "http://localhost:8080/dept/create" - inserts into department 
 
- * Employee: GET - "http://localhost:8080/emp/get" - gets list of all employees GET - "http://localhost:8080/emp/{id}" - gets employees with selected id POST - "http://localhost:8080/emp/create" - inserts into employees   DELETE - "http://localhost:8080/emp/del/{id}" - deletes employees with selected id PATCH - "http://localhost:8080/emp/patch/{id}" - patches/updates employees with selected id
+    - Employee: GET - "http://localhost:8080/emp/get" - gets list of all employees GET - "http://localhost:8080/emp/{id}" - gets employees with selected id POST - "http://localhost:8080/emp/create" - inserts into employees   DELETE - "http://localhost:8080/emp/del/{id}" - deletes employees with selected id PATCH - "http://localhost:8080/emp/patch/{id}" - patches/updates employees with selected id
 
 # ASSUMPTIONS
 
