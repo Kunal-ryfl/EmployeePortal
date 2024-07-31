@@ -1,4 +1,4 @@
-#Employee Management System
+#Employee Management System#
 
 #HOW TO RUN THIS PROJECT?# ###FROM THE IDE:###
 
@@ -27,20 +27,22 @@ Hit url : "http://localhost:8080/emp/get" and url : "http://localhost:8080/dept/
 
 Accordingly select the request method and the url as follows: Department: GET - "http://localhost:8080/dept/get" - gets list of all departments GET - "http://localhost:8080/dept/{id}" - gets department with selected id POST - "http://localhost:8080/dept/create" - inserts into department 
 
-Employee: GET - "http://localhost:8080/employees" - gets list of all employees GET - "http://localhost:8080/emp/{id}" - gets employees with selected id POST - "http://localhost:8080/emp/create" - inserts into employees   DELETE - "http://localhost:8080/emp/del/{id}" - deletes employees with selected id PATCH - "http://localhost:8080/emp/patch/{id}" - patches/updates employees with selected id
+Employee: GET - "http://localhost:8080/emp/get" - gets list of all employees GET - "http://localhost:8080/emp/{id}" - gets employees with selected id POST - "http://localhost:8080/emp/create" - inserts into employees   DELETE - "http://localhost:8080/emp/del/{id}" - deletes employees with selected id PATCH - "http://localhost:8080/emp/patch/{id}" - patches/updates employees with selected id
 
-#ASSUMPTIONS#
+#ASSUMPTIONS
 
-DATABASE and TABLES are created in dB.
-DepartmentID is a foreign key in Employee table.
-Make sure department table is populated with the department you refer for in employee.
+* DATABASE and TABLES are created in dB.
+* DepartmentID is a foreign key in Employee table.
+* Make sure department table is populated with the department you refer for in employee.
+
 #TECHNOLOGY STACK#
 
-Java Spring
-H2 dB
+* Java Spring
+* H2 dB
+
 #DESIGN#
 
-The employee table has a department id foreign key.
-Department table needs to have a value existing to be referred by the employee table.
-Get mapping will fetch the results, Post mapping will insert results, Put mapping and Patch mapping will update results, Delete mapping will delete results.
-You will need to create database if not, change in the application.properties file.
+* The employee table has a department id foreign key.
+* Department table needs to have a value existing to be referred by the employee table.
+* Get mapping will fetch the results, Post mapping will insert results, Put mapping and Patch mapping will update results, Delete mapping will delete results.
+* You will need to create database if not, change in the application.properties file.
