@@ -23,7 +23,7 @@ Check if localhost server has started.
 
 Open Postman client service on Google chrome.
 
-Hit url : "http://localhost:8080/emp" and url : "http://localhost:8080/dept"
+Hit url : "http://localhost:8080/emp/get" and url : "http://localhost:8080/dept/get"
 
 Accordingly select the request method and the url as follows: Department: GET - "http://localhost:8080/dept/get" - gets list of all departments GET - "http://localhost:8080/dept/{id}" - gets department with selected id POST - "http://localhost:8080/dept/create" - inserts into department 
 
