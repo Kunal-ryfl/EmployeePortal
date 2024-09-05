@@ -21,7 +21,7 @@ spring.datasource.url = jdbc:h2:mem:testdb
 
 * Check if localhost server has started.
 
-* Login - ADMIN (username : admin, password : 123) , USER (username : admin, password : 123)
+* Login - ADMIN (username : admin, password : 123) , USER (username : user, password : 123)
 
 * Open Postman/Any client service on your machine.
 
