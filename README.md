@@ -23,11 +23,11 @@ spring.datasource.url = jdbc:h2:mem:testdb
 
 * Login - ADMIN (username : admin, password : 123) , USER (username : admin, password : 123)
 
-* Open Postman client service on Google chrome.
+* Open Postman/Any client service on your machine.
 
 * Hit url : "http://localhost:8080/emp/get" and url : "http://localhost:8080/dept/get" 
 
-* Accordingly select the request method and the url as follows (CREATE/DELETE/PATH require ADMIN access ):
+* Accordingly select the request method and the url as follows (CREATE/DELETE/PATCH require ADMIN access ):
    - Department: GET - "http://localhost:8080/dept/get" - gets list of all departments GET - "http://localhost:8080/dept/{id}" - gets department with selected id POST - "http://localhost:8080/dept/create" - inserts into department 
 
     - Employee: GET - "http://localhost:8080/emp/get" - gets list of all employees GET - "http://localhost:8080/emp/{id}" - gets employees with selected id POST - "http://localhost:8080/emp/create" - inserts into employees   DELETE - "http://localhost:8080/emp/del/{id}" - deletes employees with selected id PATCH - "http://localhost:8080/emp/patch/{id}" - patches/updates employees with selected id
@@ -52,6 +52,7 @@ spring.datasource.url = jdbc:h2:mem:testdb
 * You will need to create database if not, change in the application.properties file.
 
 # IMAGES
+![Screenshot 2024-09-05 124201](https://github.com/user-attachments/assets/b9cc3287-fdec-49a1-be1d-46be26e181f7)
 ![Screenshot 2024-09-05 120929](https://github.com/user-attachments/assets/11cdd5ab-e58a-4d1a-9090-34600a422b2e)
 ![Screenshot 2024-09-05 121056](https://github.com/user-attachments/assets/243a8468-4c70-4856-a209-b620fcbd21fc)
 ![Screenshot 2024-09-05 121314](https://github.com/user-attachments/assets/c3cdb78b-41e1-456d-900b-2eef6487328a)
