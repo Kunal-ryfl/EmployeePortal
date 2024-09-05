@@ -21,11 +21,13 @@ spring.datasource.url = jdbc:h2:mem:testdb
 
 * Check if localhost server has started.
 
+* Login - ADMIN (username : admin, password : 123) , USER (username : admin, password : 123)
+
 * Open Postman client service on Google chrome.
 
-* Hit url : "http://localhost:8080/emp/get" and url : "http://localhost:8080/dept/get"
+* Hit url : "http://localhost:8080/emp/get" and url : "http://localhost:8080/dept/get" 
 
-* Accordingly select the request method and the url as follows:
+* Accordingly select the request method and the url as follows (CREATE/DELETE/PATH require ADMIN access ):
    - Department: GET - "http://localhost:8080/dept/get" - gets list of all departments GET - "http://localhost:8080/dept/{id}" - gets department with selected id POST - "http://localhost:8080/dept/create" - inserts into department 
 
     - Employee: GET - "http://localhost:8080/emp/get" - gets list of all employees GET - "http://localhost:8080/emp/{id}" - gets employees with selected id POST - "http://localhost:8080/emp/create" - inserts into employees   DELETE - "http://localhost:8080/emp/del/{id}" - deletes employees with selected id PATCH - "http://localhost:8080/emp/patch/{id}" - patches/updates employees with selected id
