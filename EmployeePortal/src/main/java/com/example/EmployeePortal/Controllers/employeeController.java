@@ -4,6 +4,7 @@ import com.example.EmployeePortal.DTO.EmployeeDto;
 import com.example.EmployeePortal.Services.EmployeeService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,12 +18,14 @@ public class employeeController {
         this.employeeService = employeeService;
     }
 
-    @GetMapping(path = "/hello")
-    public String hello() {
-        return "hello";
-    }
+//    @PreAuthorize("hasRole('ADMIN')")
+//    @GetMapping(path = "/hello")
+//    public String hello() {
+//        return "hello";
+//    }
 
     @PostMapping(path = "/create")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<?> create(@RequestBody EmployeeDto employeeDto) {
 
         EmployeeDto created_emp;
@@ -35,6 +38,7 @@ public class employeeController {
 
         return new ResponseEntity<>(created_emp, HttpStatus.OK);
     }
+
 
     @GetMapping(path = "/get")
     public ResponseEntity<?> get() {
@@ -53,8 +57,8 @@ public class employeeController {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
     }
-
     @DeleteMapping(path = "/delete/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<?> delById(@PathVariable String id) {
         try {
 
@@ -65,8 +69,8 @@ public class employeeController {
         return new ResponseEntity<>("DELETED", HttpStatus.OK);
     }
 
-
     @PatchMapping("/patch/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<?> updateName(@PathVariable String id,@RequestBody EmployeeDto employeeDto) {
 
         try {

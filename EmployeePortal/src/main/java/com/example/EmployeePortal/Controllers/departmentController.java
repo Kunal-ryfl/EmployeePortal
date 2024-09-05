@@ -4,6 +4,7 @@ import com.example.EmployeePortal.DTO.DepartementDto;
 import com.example.EmployeePortal.Services.DepartmentService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.http.HttpResponse;
@@ -19,7 +20,10 @@ public class departmentController {
         this.departmentService = departmentService ;
     }
 
+
+
     @PostMapping(path = "/create")
+    @PreAuthorize("hasRole('ADMIN')")
    public   ResponseEntity<?> create(@RequestBody DepartementDto departementDto){
       DepartementDto created_dept =    departmentService.create(departementDto);
       return new ResponseEntity<>(departementDto, HttpStatus.OK);
