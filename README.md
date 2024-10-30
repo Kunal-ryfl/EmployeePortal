@@ -88,7 +88,13 @@ spring.datasource.url = jdbc:h2:mem:testdb
   
 ![Screenshot 2024-09-05 121958](https://github.com/user-attachments/assets/a84a11b1-d5f3-4f1d-9d8f-08df7e6fc733)
 ![Screenshot 2024-09-05 122021](https://github.com/user-attachments/assets/59cad23c-38f2-4c23-b4a1-9496938e55a2)
+
+* User forbidden to update
+
 ![Screenshot 2024-09-05 122326](https://github.com/user-attachments/assets/997b2b98-cf2b-48c0-892a-746c0004af0a)
+
+* Admin updated employee
+  
 ![Screenshot 2024-09-05 122451](https://github.com/user-attachments/assets/a3e03b51-83a8-463f-8ae4-66d68b470ff2)
 ![Screenshot 2024-09-05 122504](https://github.com/user-attachments/assets/d279b3a6-d64f-402b-adef-46e26e62f4ab)
 ![Screenshot 2024-09-05 122523](https://github.com/user-attachments/assets/c9e3edf6-d282-4de0-adee-9fd82bab29ac)
