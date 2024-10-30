@@ -84,7 +84,8 @@ spring.datasource.url = jdbc:h2:mem:testdb
 ![Screenshot 2024-09-05 121727](https://github.com/user-attachments/assets/91571adf-59f1-42b5-a730-8aa67c259b98)
 ![Screenshot 2024-09-05 121746](https://github.com/user-attachments/assets/ea76eef1-60c6-4288-b40b-195dd4aeb97f)
 
-* Delete
+* Admin deleted employee
+  
 ![Screenshot 2024-09-05 121958](https://github.com/user-attachments/assets/a84a11b1-d5f3-4f1d-9d8f-08df7e6fc733)
 ![Screenshot 2024-09-05 122021](https://github.com/user-attachments/assets/59cad23c-38f2-4c23-b4a1-9496938e55a2)
 ![Screenshot 2024-09-05 122326](https://github.com/user-attachments/assets/997b2b98-cf2b-48c0-892a-746c0004af0a)
