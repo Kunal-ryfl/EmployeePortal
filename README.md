@@ -52,13 +52,13 @@ spring.datasource.url = jdbc:h2:mem:testdb
 * You will need to create database if not, change in the application.properties file.
 
 # IMAGES
-(Sign in)
+* (Sign in)
 ![Screenshot 2024-09-05 124201](https://github.com/user-attachments/assets/b9cc3287-fdec-49a1-be1d-46be26e181f7)
 
-(User not permitted to create)
+* (User not permitted to create)
 ![Screenshot 2024-09-05 120929](https://github.com/user-attachments/assets/11cdd5ab-e58a-4d1a-9090-34600a422b2e)
 
-(Admin created dept.)
+* (Admin created dept.)
 ![Screenshot 2024-09-05 121056](https://github.com/user-attachments/assets/243a8468-4c70-4856-a209-b620fcbd21fc)
 ![Screenshot 2024-09-05 121314](https://github.com/user-attachments/assets/c3cdb78b-41e1-456d-900b-2eef6487328a)
 ![Screenshot 2024-09-05 121353](https://github.com/user-attachments/assets/390599e8-6974-4621-a13f-33ae44fd4b55)
