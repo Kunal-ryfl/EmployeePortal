@@ -52,20 +52,25 @@ spring.datasource.url = jdbc:h2:mem:testdb
 * You will need to create database if not, change in the application.properties file.
 
 # IMAGES
-* (Sign in)
+* Sign in
   
 ![Screenshot 2024-09-05 124201](https://github.com/user-attachments/assets/b9cc3287-fdec-49a1-be1d-46be26e181f7)
 
-* (User not permitted to create)
+* User not permitted to create
   
 ![Screenshot 2024-09-05 120929](https://github.com/user-attachments/assets/11cdd5ab-e58a-4d1a-9090-34600a422b2e)
 
-* (Admin created dept.)
+* Admin created dept.
   
 ![Screenshot 2024-09-05 121056](https://github.com/user-attachments/assets/243a8468-4c70-4856-a209-b620fcbd21fc)
+
+* User get dept. view
+
 ![Screenshot 2024-09-05 121314](https://github.com/user-attachments/assets/c3cdb78b-41e1-456d-900b-2eef6487328a)
 ![Screenshot 2024-09-05 121353](https://github.com/user-attachments/assets/390599e8-6974-4621-a13f-33ae44fd4b55)
 ![Screenshot 2024-09-05 121505](https://github.com/user-attachments/assets/cd6e5e34-db19-40a9-b856-c7cb8b7889ea)
+
+
 ![Screenshot 2024-09-05 121543](https://github.com/user-attachments/assets/614168e0-be95-436b-90a0-d674295ef044)
 ![Screenshot 2024-09-05 121622](https://github.com/user-attachments/assets/72ba9f14-4c6a-4767-9558-d87ded03e8e6)
 ![Screenshot 2024-09-05 121644](https://github.com/user-attachments/assets/ca07f955-15ba-4392-8c82-f7ede99e7028)
