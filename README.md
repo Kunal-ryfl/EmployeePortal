@@ -68,6 +68,9 @@ spring.datasource.url = jdbc:h2:mem:testdb
 
 ![Screenshot 2024-09-05 121314](https://github.com/user-attachments/assets/c3cdb78b-41e1-456d-900b-2eef6487328a)
 ![Screenshot 2024-09-05 121353](https://github.com/user-attachments/assets/390599e8-6974-4621-a13f-33ae44fd4b55)
+
+* Admin created employee
+  
 ![Screenshot 2024-09-05 121505](https://github.com/user-attachments/assets/cd6e5e34-db19-40a9-b856-c7cb8b7889ea)
 
 
