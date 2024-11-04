@@ -22,13 +22,19 @@ public class departmentController {
 
 
 
+//    @PostMapping(path = "/create")
+//    @PreAuthorize("hasRole('ADMIN')")
+//   public   ResponseEntity<?> create(@RequestBody DepartementDto departementDto){
+//      DepartementDto created_dept =    departmentService.create(departementDto);
+//      return new ResponseEntity<>(departementDto, HttpStatus.OK);
+//    }
+
     @PostMapping(path = "/create")
     @PreAuthorize("hasRole('ADMIN')")
-   public   ResponseEntity<?> create(@RequestBody DepartementDto departementDto){
-      DepartementDto created_dept =    departmentService.create(departementDto);
-      return new ResponseEntity<>(departementDto, HttpStatus.OK);
+    public ResponseEntity<?> create(@ModelAttribute DepartementDto departementDto) {
+        DepartementDto created_dept = departmentService.create(departementDto);
+        return new ResponseEntity<>(created_dept, HttpStatus.OK);
     }
-
     @GetMapping(path = "/get")
     public ResponseEntity<?> get(){
       List<DepartementDto> res = departmentService.get();

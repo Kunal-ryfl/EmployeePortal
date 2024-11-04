@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200">
+<div class="container mx-auto py-10">
+    <div class="bg-white shadow-lg rounded-lg p-8">
+        <h1 class="text-4xl font-bold text-center text-gray-800 mb-6">
+            Welcome! You are
+            <span sec:authorize="hasRole('ADMIN')" class="text-blue-600">ADMIN</span>
+            <span sec:authorize="hasRole('USER')" class="text-green-600">USER</span>
+        </h1>
+
+        <div class="flex flex-col items-center space-y-4 mt-6">
+            <!-- Buttons for all users -->
+            <a href="/viewEmployees"
+               class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow transition duration-200 transform hover:scale-105">
+                View Employees
+            </a>
+            <a href="/viewDepartments"
+               class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow transition duration-200 transform hover:scale-105">
+                View Departments
+            </a>
+
+            <!-- Buttons for admin users -->
+            <div sec:authorize="hasRole('ADMIN')" class="space-y-4  mt-6">
+                <a href="/createEmployeeForm"
+                   class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg shadow transition duration-200 transform hover:scale-105">
+                    Create Employee
+                </a>
+                <a href="/createDepartmentForm"
+                   class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg shadow transition duration-200 transform hover:scale-105">
+                    Create Department
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

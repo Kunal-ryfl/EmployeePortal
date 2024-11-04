@@ -6,6 +6,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.springframework.web.servlet.view.RedirectView;
 
 import java.util.List;
 
@@ -24,21 +26,33 @@ public class employeeController {
 //        return "hello";
 //    }
 
-    @PostMapping(path = "/create")
-    @PreAuthorize("hasRole('ADMIN')")
-    public ResponseEntity<?> create(@RequestBody EmployeeDto employeeDto) {
+//    @PostMapping(path = "/create")
+//    @PreAuthorize("hasRole('ADMIN')")
+//    public ResponseEntity<?> create(@RequestBody EmployeeDto employeeDto) {
+//
+//        EmployeeDto created_emp;
+//        try {
+//
+//            created_emp = employeeService.createEmployee(employeeDto);
+//        } catch (IllegalArgumentException exception) {
+//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+//        }
+//
+//        return new ResponseEntity<>(created_emp, HttpStatus.OK);
+//    }
 
-        EmployeeDto created_emp;
-        try {
-
-            created_emp = employeeService.createEmployee(employeeDto);
-        } catch (IllegalArgumentException exception) {
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-        }
-
-        return new ResponseEntity<>(created_emp, HttpStatus.OK);
+@PostMapping(path = "/create", consumes = "application/x-www-form-urlencoded")
+@PreAuthorize("hasRole('ADMIN')")
+public RedirectView create(EmployeeDto employeeDto, RedirectAttributes redirectAttributes) {
+    try {
+        EmployeeDto createdEmp = employeeService.createEmployee(employeeDto);
+        redirectAttributes.addFlashAttribute("message", "Employee created successfully!");
+    } catch (IllegalArgumentException exception) {
+        redirectAttributes.addFlashAttribute("error", "Failed to create employee.");
+        return new RedirectView("/createEmployeeForm");
     }
-
+    return new RedirectView("/viewEmployees"); // Redirect to the desired page
+}
 
     @GetMapping(path = "/get")
     public ResponseEntity<?> get() {
@@ -51,7 +65,6 @@ public class employeeController {
     @GetMapping(path = "/get/{id}")
     public ResponseEntity<?> getById(@PathVariable String id) {
         try {
-
          return new ResponseEntity<>( employeeService.getEmpByID(id),HttpStatus.OK);
         }catch (IllegalArgumentException exception){
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);

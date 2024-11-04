@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <title>Employee List</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+<div class="container mx-auto">
+    <!-- Title and Create Button -->
+    <div class="flex justify-between items-center mb-6">
+        <h1 class="text-2xl font-bold text-gray-800">Employee List</h1>
+        <!-- Conditionally Render Create Button -->
+        <div sec:authorize="hasRole('ADMIN')">
+            <a href="/createEmployeeForm"
+               class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded shadow">
+                Create Employee
+            </a>
+        </div>
+    </div>
+
+    <!-- Employee Table -->
+    <div class="overflow-x-auto">
+        <table class="table-auto w-full bg-white rounded-lg shadow-md">
+            <thead class="bg-blue-100">
+            <tr>
+                <th class="px-4 py-2 text-left text-gray-700 font-semibold">Employee ID</th>
+                <th class="px-4 py-2 text-left text-gray-700 font-semibold">Employee Name</th>
+                <th class="px-4 py-2 text-left text-gray-700 font-semibold">Department ID</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="employee : ${employees}" class="border-b">
+                <td class="border px-4 py-2 text-gray-600" th:text="${employee.eId}"></td>
+                <td class="border px-4 py-2 text-gray-600" th:text="${employee.eName}"></td>
+                <td class="border px-4 py-2 text-gray-600" th:text="${employee.dId}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
