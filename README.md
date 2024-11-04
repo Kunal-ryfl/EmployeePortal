@@ -52,13 +52,13 @@ spring.datasource.url = jdbc:h2:mem:testdb
 * You will need to create database if not, change in the application.properties file.
 
 # IMAGES
+![Screenshot 2024-11-04 233722](https://github.com/user-attachments/assets/2bda20b4-708c-457f-bae1-4eeecc16c4ad)
+![Screenshot 2024-11-04 233653](https://github.com/user-attachments/assets/fc40ec6b-b6b8-42e0-a3cc-1869aa3c9eda)
+![Screenshot 2024-11-04 233616](https://github.com/user-attachments/assets/9cdccd72-4a4d-4a4c-8605-655519444c37)
+![Screenshot 2024-11-04 233537](https://github.com/user-attachments/assets/23742525-87b4-4682-8903-7b4551f579b7)
+![Screenshot 2024-11-04 233454](https://github.com/user-attachments/assets/86600fd2-f571-4529-98cd-934f9d27f26b)
+![Screenshot 2024-11-04 233354](https://github.com/user-attachments/assets/9cfc9223-9aa7-453d-8f3b-061dd8aea677)
 
-![Screenshot 2024-11-04 233722](https://github.com/user-attachments/assets/b3563285-925e-4b86-9bd1-d6fd58ac296e)
-![Screenshot 2024-11-04 233653](https://github.com/user-attachments/assets/d3a249c5-d5d4-4113-97c2-98943b30f8c7)
-![Screenshot 2024-11-04 233616](https://github.com/user-attachments/assets/d2bfbe0b-8f66-4a09-b86d-9c0a6f045ca8)
-![Screenshot 2024-11-04 233537](https://github.com/user-attachments/assets/d7db2059-ccb2-4e2d-a597-788e56c07e15)
-![Screenshot 2024-11-04 233454](https://github.com/user-attachments/assets/61b68f52-2efb-4475-8756-116aaaa1e0f6)
-![Screenshot 2024-11-04 233354](https://github.com/user-attachments/assets/538ae6d5-9072-4bf9-908f-7cc050b79fe0)
 
 
 
