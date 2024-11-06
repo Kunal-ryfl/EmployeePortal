@@ -1,4 +1,4 @@
-![Screenshot 2024-11-06 115620](https://github.com/user-attachments/assets/f3777153-508d-4a3d-982f-d3b19406ac39)# Employee Management System
+# Employee Management System
 
 # HOW TO RUN THIS PROJECT?
 
@@ -53,6 +53,7 @@ spring.datasource.url = jdbc:h2:mem:testdb
 
 # IMAGES
 * EC2 Deployment
+  
 ![Screenshot 2024-11-06 115620](https://github.com/user-attachments/assets/90f38946-0ae9-470e-a9f2-175107913736)
 ![Screenshot 2024-11-06 115452](https://github.com/user-attachments/assets/2b65ea27-8eed-480b-8737-0e31d5a22bdc)
 ![Screenshot 2024-11-06 115347](https://github.com/user-attachments/assets/089327dd-3206-434b-b0bf-462333a7234f)
