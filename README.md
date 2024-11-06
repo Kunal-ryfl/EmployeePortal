@@ -1,4 +1,4 @@
-# Employee Management System
+![Screenshot 2024-11-06 115620](https://github.com/user-attachments/assets/f3777153-508d-4a3d-982f-d3b19406ac39)# Employee Management System
 
 # HOW TO RUN THIS PROJECT?
 
@@ -52,6 +52,13 @@ spring.datasource.url = jdbc:h2:mem:testdb
 * You will need to create database if not, change in the application.properties file.
 
 # IMAGES
+* EC2 Deployment
+![Screenshot 2024-11-06 115620](https://github.com/user-attachments/assets/90f38946-0ae9-470e-a9f2-175107913736)
+![Screenshot 2024-11-06 115452](https://github.com/user-attachments/assets/2b65ea27-8eed-480b-8737-0e31d5a22bdc)
+![Screenshot 2024-11-06 115347](https://github.com/user-attachments/assets/089327dd-3206-434b-b0bf-462333a7234f)
+
+* Thymeleaf
+
 ![Screenshot 2024-11-04 233722](https://github.com/user-attachments/assets/2bda20b4-708c-457f-bae1-4eeecc16c4ad)
 ![Screenshot 2024-11-04 233653](https://github.com/user-attachments/assets/fc40ec6b-b6b8-42e0-a3cc-1869aa3c9eda)
 ![Screenshot 2024-11-04 233616](https://github.com/user-attachments/assets/9cdccd72-4a4d-4a4c-8605-655519444c37)
